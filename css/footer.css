@@ -1,0 +1,8 @@
+footer{
+    height: 21px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-style: italic;
+}

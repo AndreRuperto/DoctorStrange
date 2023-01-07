@@ -1,0 +1,49 @@
+header{
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.links-container{
+    display: flex;
+    gap: 32px;
+}
+
+.links-container a{
+    text-shadow: 2px 2px 2px #000;
+}
+
+.links-container a:hover{
+    color: white;
+    padding: 6px;
+    transition: all .7s;
+    background-color: #E62721;
+    border: 1px solid #E62721;
+    border-radius: 10px;
+}
+
+@media (max-width:768px){
+    .links-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 65px;
+        font-size: 36px;
+        transform: translateX(100%);
+        opacity: 0;
+        z-index: 1;
+        transition: all 1s;
+    }   
+}
+
+.divi.active ~ .links-container{
+    opacity: 1;
+    transform: translateX(0%);
+  }
