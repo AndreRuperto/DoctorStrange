@@ -1,0 +1,89 @@
+main{
+    flex-grow: 1;
+    display: flex;
+}
+
+.content-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.content-container h1{
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-tittle{
+    font-size: 2.6rem; 
+    color: #1998DF;
+    transform: translateY(-20px);
+}
+
+.movie-text{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.social-content{
+    width: 48px;
+}
+
+.imagemimp{
+    margin-top: 300px;
+}
+
+#imgcm{
+    margin-bottom: 10px;;
+}
+
+.social-content img{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.butaozin{
+    border-radius: 10px;
+    padding: 20px 0;
+    background-color: #07638C;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.botao{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width:768px){
+    .content-container{
+        justify-content: flex-end;
+        margin-bottom: 50px;
+    }
+    .content-container h1{
+        font-size: 4rem;
+    }
+    .content-container h1 span{
+        font-size: 1.5rem;
+        transform: translateY(15px)
+    }
+    .movie-title{
+        font-size: 1.45rem;
+        transform: translateY(15px)
+    }
+    .movie-text{
+        display: none;
+    }
+    .social-content{
+        display: none;
+    }
+}
